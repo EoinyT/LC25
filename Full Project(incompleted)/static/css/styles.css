@@ -1,0 +1,97 @@
+h3{
+    font-size: 25px;
+}
+
+
+
+body{
+    margin: 0;
+    font-family:serif; 
+    font-weight: 900;
+    letter-spacing: .7px;
+}
+
+.SelectionButtons {
+    margin-top: 150px;
+    margin-left: 40%;
+}
+#borP {
+    padding: 10px;
+    text-align: center;
+   
+}
+
+
+.SelectionRating {
+    margin-top: 150px;
+    margin-left: 40%;
+}
+.Rater {
+    text-align: center;
+    justify-content: center;
+    font-weight: 900;
+    border-color: blue;
+}
+#rating {
+    font-weight: 900;
+
+}
+.numbers {
+    font-weight: 900;
+}
+
+
+
+
+
+.filter-switch {
+    border: 2px solid #ffc000;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    overflow: hidden;
+  }
+  .filter-switch input {
+    display: none;
+  }
+  .filter-switch label {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .filter-switch .background {
+    position: absolute;
+    width: 49%;
+    height: 38px;
+    background-color: #ffc000;
+    top: 4px;
+    left: 4px;
+    border-radius: 30px;
+    transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  #Pleasure:checked ~ .background {
+    left: 50%;
+  }
+  #Business:checked + label[for="option1"] {
+    color: #212121;
+    font-weight: bold;
+  }
+  #Pleasure:checked + label[for="option2"] {
+    color: #212121;
+    font-weight: bold;
+  }
+  #Business:not(:checked) + label[for="option1"],
+  #Pleasure:not(:checked) + label[for="option2"] {
+    color: #7d7d7d;
+  }
